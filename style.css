@@ -1,0 +1,162 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: black;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    min-width: 325px;
+    min-height: 100vh;
+    /* background-color: chartreuse; */
+}
+
+.content {
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+
+button {
+    border: none;
+    background-color: rgb(111, 168, 187);
+    font-size: 24px;
+    padding: 16px;
+    margin: 10px;
+    height: 60px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(70, 124, 224);
+    transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+}
+
+input {
+    border: none;
+    background-color: #eaeaea;
+    color: rgb(13, 13, 12);
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#pertanyaan {
+    font-size: 1.6em;
+    font-weight: 500;
+    text-align: center;
+    /* background-color: deeppink;
+    width: 550px;
+    height: 50px; */
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 18px;
+        padding: 12px;
+        height: auto;
+    }
+    input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    #pertanyaan {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    input {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #pertanyaan {
+        font-size: 1.2em;
+    }
+
+    .wrapper {
+        padding: 10px;
+    }
+}
+
+#looders {
+    display: none;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    /*background-color: fuchsia;
+    */border-top: 15px solid rgb(255, 43, 255);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    animation: 1s spin infinite linear;
+    -webkit-animation: 1s spin infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+        border-top: 15px solid rgb(255, 60, 255);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        border-top: 15px solid rgb(255, 97, 255);
+    }
+    
+    75% {
+        transform: rotate(270deg);
+        border-top: 15px solid rgb(255, 137, 255);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+        border-top: 15px solid rgb(255, 167, 255);
+}
+}
